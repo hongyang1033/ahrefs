@@ -8,7 +8,7 @@
 
 // 2. Vendors
 @import
-  'vendor/normalize';
+  'vendor/normalize',
   'vendor/bootstrap';
 
 // 3. Base stuff
@@ -25,7 +25,9 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/nav',
+  'components/button',
+  'components/svg';
 
 // 6. Page-specific styles
 @import

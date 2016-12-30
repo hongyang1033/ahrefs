@@ -1,30 +1,180 @@
-*
-  box-sizing: border-box;
+body
+  font-family: 'Lato', 'sans-serif'
+  color: white
 
 .hero
   background-image: url(../images/desktop.jpg)
-  background-position: 100% 100%
   background-repeat: no-repeat
-  background-size: cover
+  background-size: 100% 100%
   position: relative
-  height: 90vh
-  @media screen and (max-width: 900px)
+  @media screen and (max-width: 960px)
+    background-image: url(../images/tablet.jpg)
+  @media screen and (max-width: 640px)
+    background-image: url(../images/mobile.jpg)
+  @media screen and (max-width: 320px)
     background-image: url(../images/mobile-xs.jpg)
 
+.headline
+  max-width: 790px
+  text-align: center
+  margin-top: 50px
+  @media screen and (max-width: 768px)
+    margin-top: 10px
+
+.hero p
+  font-size: responsive 15px 21px
+  font-range: 420px 1280px
+  color: 97a5c2
+  margin: 0 auto
+  margin-top: 20px
+  width: 100%
+  max-width: 440px
+
+
+.hero h1
+  font-size: responsive 28px 56px
+  font-range: 420px 1280px
+  font-weight: 700
+  max-width: 620px
+  margin: 0 auto
+  @media screen and (max-width: 768px)
+    padding: 0 60px
+  @media screen and (max-width: 480px)
+    padding: 0 10px
+
+.btn-orange
+  margin-top: 20px
+  margin-bottom: 50px
+
+.mac-wrapper
+  text-align: center
+
+.mac-wrapper img
+  margin-bottom: -100px
+
+.tools
+  margin-top: 170px
+  color: black
+  text-align: center
+  @media screen and (max-width: 768px)
+    margin-top: 140px
+  @media screen and (max-width: 767px)
+    margin-top: 40px
+
+.tools-headline h1
+  color: 393f4c
+  font-weight: 700
+  font-size: responsive 24px 48px
+  font-range: 480px 1280px
+
+
+.tools-list
+  padding: 0
+  padding-top: 80px
+  border-bottom: 1px solid #ddd
+
+
+.tools-list li
+  &:nth-child(1)
+    margin-left: 20px
+  margin-right: 20px
+  display: inline-block
+  width: 130px
+  @media screen and (max-width: 992px)
+    width: 80px
+  position: relative
+  cursor: pointer
+
+
+.tools-list li span:hover:after
+  border-bottom: 1px solid #0d3e7e
+
+
+.tools-list li p
+  font-size: 16px
+  font-weight: 700
+  color: #393f4c
+  text-decoration: none
+
+
+.tools-list li span,
+span.mobile
+  display: block
+  width: 70px
+  height: 70px
+  padding-top: 3px
+  background: #13bf80
+  margin: 0 auto 14px
+  border-radius: 15px
+
+
+.tools-list li.span-active
+  border-bottom: 1px solid #21426a
+
+
+.tools-list li span:hover
+  background: #21426a
+
+
+.tools-list li span.span-active
+  background: #21426a
+
+
+.tools-list li span img, span.mobile img
+  padding-top: 10px
+
+.tools-description
+  margin-top: 70px
+
+.tools-description-mobile
+  text-align: center
+
+.description-text
+  display: inline-block
+  float: left
+  width: 30%
+  @media screen and (max-width: 992px)
+    width: 40%
+
+.description-text
+  padding: 60px 60px
+  text-align: left
+
+.description-text h2, .slider-mobile h2
+  font-size: responsive 20px 38px
+  font-range: 420px 1280px
+  font-weight: 700
+  margin-bottom: 40px
+
+
+.description-text h5, .slider-mobile h5
+  font-size: responsive 13px 18px
+  font-range: 420px 1280px
+  font-weight: 700
+  margin-bottom: 30px
+
+.description-text p, .slider-mobile p
+  font-size: responsive 13px 18px
+  font-range: 420px 1280px
+  max-width: 320px
+
+.description-image
+  float: left
+  width: 70%
+  @media screen and (max-width: 992px)
+    width: 60%
+
+.description-image > img
+  min-height: 650px
+
+.tools-description-mobile h5
+  font-size: 18px
+  font-weight: 700
+
+.tools-description-mobile p
+  font-size: 15px
+// h5
+//   font-size: 15px
 //
-// lato
-//   regular
-//     heavy
-//       bold
-//         semibold
-//           italic
-//             medium
-
-sm
-  480x172
-
-md
-  960x300
-
-lg
-  normal size
+// p
+//   font-size: 13px
