@@ -9,48 +9,17 @@ html(lang="en")
     script(type="text/javascript", src="assests/js/bootstrap.min.js")
     script(type="text/javascript", src="assests/js/main.js")
     script(type="text/javascript", src="assests/js/unslider-min.js")
-
-    include mixins
+    include mixins/mixins
 
     body
-      div(class="hero")
-        include section/header/header
-        div(class="container headline")
-          div(class="row")
-            div(class="col-xs-12")
-              h1 Powerful toolset for SEO and beyond
-          div(class="row")
-            div(class="col-xs-12")
-              p Track your backlinks, keywords, brand mentions and know what your competitors are doing
-          div(class="row")
-            div(class="col-xs-12")
-              button(class="btn-orange") Start FREE 14-day trial
-        div(class="container mac-wrapper")
-          div(class="row")
-            div(class="col-lg-12 hidden-sm-down")
-              img(src="assests/images/mac.png", alt="ahrefs mac showcase", class="img-fluid")
+      include section/hero
 
-      div(class="tools")
-        div(class="container tools-headline")
-          div(class="row")
-            div(class="col-xs-12")
-              h1 The tools you get with Ahrefs
-        div(class="container-fluid hidden-sm-down")
-          ul(class="tools-list")
-            +tool-list("site-explorer", "Site Explorer")
-            +tool-list("position-explorer", "Position Explorer")
-            +tool-list("content-explorer", "Content Explorer")
-            +tool-list("position-tracker", "Position Tracker")
-            +tool-list("crawl-report", "Crawl Report")
-            +tool-list("ahrefs-alert", "Ahrefs Alert")
-        div(class="tools-description hidden-sm-down")
-          div(class="slider")
-            ul
-              +tool-description("Site Explorer", "The best backlink checker tool in the industry ", "Take a detailed look at a backlink profile of any website or URL: what websites link to it, what anchors they use, how strong are these backlinks, etc.", "Track how backlinks amount grows over time and perform an in-depth backlink analysis using our advanced reports and handy filtering options.", "site-explorer-img")
-              +tool-description("Position Explorer", "Analyze your competitors' search traffic", "Get an email notification whenever you or your competitors get a new backlink or lose one. You’ll see exactly where any new backlinks are coming from.", "Ahrefs will also notify you whenever someone mentions your business or any keywords you want to monitor. Learn exactly what people are saying about you and your competitors in real time." ,"position-explorer-img")
-              +tool-description("Content Explorer", "Discover the content that's working well in your niche" ,"Find out what content is getting the most shares and backlinks so you can build a winning content strategy.", "You’ll see every site that's linking to a popular piece of content, so you can create a list of outreach targets for your linkbuilding campaign.", "content-explorer-img")
-              +tool-description("Position Tracker", "Get accurate, daily ranking data" ,"Track your keyword rankings in all countries and languages, and find out how well you rank on mobile devices.", "We'll show you your position history over time and send you weekly/monthly ranking reports so you can track your progress without leaving your inbox.", "position-tracker-img")
-              +tool-description("Crawl Report","Identify and fix common SEO issues on your site", "Run Crawl Reports with just a few clicks and Ahrefs will instantly identify any issues that may be hurting your visibility in search engines and tell you how to fix them.", "We'll check the response codes and loading speed of all your pages, ensuring that every page is perfectly optimised for search.", "crawl-report-img")
-              +tool-description("Ahrefs Alerts", "Never miss another backlink or mention" ,"Get an email notification whenever you or your competitors get a new backlink or lose one. You’ll see exactly where any new backlinks are coming from.", "Ahrefs will also notify you whenever someone mentions your business or any keywords you want to monitor. Learn exactly what people are saying about you and your competitors in real time.","ahrefs-alert-img")
-        div(class="tools-description-mobile hidden-lg-up")
-          include svg/svg
+      include section/tools
+
+      include section/data
+
+      include section/testimonial
+
+      include section/tryit
+
+      include section/footer/footer

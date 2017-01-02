@@ -73,4 +73,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# PSD files
+*.psd
+
 # End of https://www.gitignore.io/api/node,windows

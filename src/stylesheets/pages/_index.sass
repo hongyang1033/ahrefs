@@ -25,8 +25,8 @@ body
   font-size: responsive 15px 21px
   font-range: 420px 1280px
   color: 97a5c2
-  margin: 0 auto
-  margin-top: 20px
+  margin: 20px auto
+  // margin-top: 20px
   width: 100%
   max-width: 440px
 
@@ -43,11 +43,11 @@ body
     padding: 0 10px
 
 .btn-orange
-  margin-top: 20px
-  margin-bottom: 50px
+  margin: 20px auto
 
 .mac-wrapper
   text-align: center
+  margin-top: 20px
 
 .mac-wrapper img
   margin-bottom: -100px
@@ -64,7 +64,7 @@ body
 .tools-headline h1
   color: 393f4c
   font-weight: 700
-  font-size: responsive 24px 48px
+  font-size: responsive 22px 48px
   font-range: 480px 1280px
 
 
@@ -137,7 +137,7 @@ span.mobile
     width: 40%
 
 .description-text
-  padding: 60px 60px
+  padding: 60px 0px
   text-align: left
 
 .description-text h2, .slider-mobile h2
@@ -161,20 +161,191 @@ span.mobile
 .description-image
   float: left
   width: 70%
+  overflow: hidden
   @media screen and (max-width: 992px)
     width: 60%
 
 .description-image > img
   min-height: 650px
+  min-width: 700px
 
 .tools-description-mobile h5
-  font-size: 18px
+  font-size: responsive 15px 18px
   font-weight: 700
 
 .tools-description-mobile p
-  font-size: 15px
-// h5
-//   font-size: 15px
-//
-// p
-//   font-size: 13px
+  font-size: responsive 13px 15px
+
+.data
+  padding: 80px 0
+  background: #0E3F7A
+  text-align: center
+  @media screen and (max-width: 640px)
+    padding: 40px 0
+
+.data > *
+  z-index: 100
+  position: relative
+
+#canvas
+  position: absolute
+  width: 1800px
+  height: 800px
+  top: 0
+  left: 50%
+  margin-left: -900px
+
+.data-headline
+  max-width: 740px
+  margin: 0 auto
+
+.data-headline h1
+  padding: 40px
+  font-weight: 700
+  font-size: responsive 20px 48px
+  font-range: 480px 1280px
+  z-index: 100
+  position: relative
+
+
+.data-details
+  max-width: 1090px
+  position: relative
+  z-index: 100
+
+.data-table > .row > .col-lg-6
+  &:nth-child(odd)
+    border-right: 1px solid #1a4981
+
+.data-table > .row
+  border-top: 1px solid #1a4981
+  &:nth-last-child(1)
+    border-bottom: 1px solid #1a4981
+//Mobile
+.data-table-mobile
+  text-align: left
+
+
+.data-table-mobile span,
+.data-table-mobile-xs span
+  display: inline-block
+  font-size: responsive 52px 128px
+  font-range: 480px 1280px
+  color: #43BC9C
+
+.data-table-mobile p span,
+.data-table-mobile-xs p span
+  color: #43BC9C
+
+.data-table-mobile p, .data-table-mobile p span,
+.data-table-mobile-xs p, .data-table-mobile-xs p span
+  text-align: left
+  display: inline-block
+  font-size: responsive 18px 44px
+  font-range: 480px 1280px
+  vertical-align: center
+  font-weight: bold
+
+.title__top-left
+  position: absolute
+  font-weight: 700
+  font-size: 21px !important
+  left: 30px
+  top: -15px
+  background: #0E3F7A
+  padding: 0 5px
+  @media screen and (max-width: 768px)
+    font-size: 13px !important
+    line-height: 28px
+
+.data-table-mobile > .row > .col-md-6.col-xs-6
+  padding: 0 40px
+  &:nth-child(odd)
+    border-right: 1px solid #1a4981
+
+.data-table-mobile > .row,
+.data-table-mobile-xs > .container > .row,
+  border-top: 1px solid #1a4981
+  &:nth-last-child(1)
+    border-bottom: 1px solid #1a4981
+
+
+.first__child
+  max-width: 38%
+
+.second__child
+  width: auto
+
+.third__child
+  max-width: 53%
+
+.fourth__child
+  width: auto
+
+.fifth__child
+  max-width: 44%
+
+.sixth__child
+  width: auto
+
+.testimonial
+  text-align: center
+  color: #393f4c
+  padding: 40px 0px
+  // margin-top: 20px
+
+.testimonial svg
+  @media screen and (max-width: 640px)
+    width: 48px
+    height: 48px
+
+.testimonial-description
+  margin-bottom: 40px
+  max-width: 900px
+
+.testimonial p
+  font-style: italic
+  font-size: responsive 15px 28px
+  padding: 40px 0px
+
+.testimonial img
+  width: 77px
+  height: 77px
+  border-radius: 15px
+  margin-bottom: 10px
+  @media screen and (max-width: 640px)
+    width: 48px
+    height: 48px
+
+.profile-description
+  display: inline-block
+  vertical-align: middle
+
+.profile-description  p
+  margin-left: 20px
+  text-align: left
+  padding: 0
+  font-size: responsive 14px 18px
+  font-style: normal
+  margin-bottom: 0px
+  &:nth-child(1)
+    font-weight: 700
+
+.try-it
+  background: #0E3F7A
+  padding: 80px 0
+
+.try-it > .container
+  text-align: center
+  color: #ffffff
+  max-width: 660px
+
+.try-it h1
+  font-size: responsive 28px 48px
+  font-range: 480px 1280px
+  font-weight: 700
+  margin-bottom: 20px
+
+.try-it p
+  font-size: responsive 16px 21px
+  font-range: 480px 1280px

@@ -1,3 +1,43 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+  color: #aaa9a9;
+  background: #1d1d1d;
+  font-size: responsive 12px 16px;
+  font-range: 480px 1280px;
+  padding: 60px
+}
+
+.footer img {
+  margin-bottom: 10px
+}
+
+.footer ul {
+  padding: 0
+}
+
+.footer ul > * {
+  display: inline-block;
+}
+
+.footer ul > li {
+  margin-right: 10px;
+}
+
+.lang:before {
+  content: url(../images/lang-en.png);
+  margin-right:10px;
+}
+
+.terms {
+  margin-bottom: 0px;
+  font-size: responsive 11px 13px;
+  color: #535353;
+}
+
+.terms span:before {
+  content: "";
+  border-right: 1px solid #535353;
+  margin: 0 10px;
+}

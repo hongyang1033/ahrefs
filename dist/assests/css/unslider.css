@@ -6,17 +6,16 @@
 }
 .unslider-nav ol li {
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   margin: 0 4px;
   background: #ebecec;
   border-radius: 5px;
   overflow: hidden;
   text-indent: -999em;
-  border: 2px solid red;
   cursor: pointer;
 }
 .unslider-nav ol li.unslider-active {
-  background: black;
+  background: #43BC9C;
   cursor: default;
 }

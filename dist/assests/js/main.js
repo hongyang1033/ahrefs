@@ -35,6 +35,13 @@ $(document).ready(function() {
     }
   }
 
+  if ($('#canvas').length > 0) {
+    var c = document.getElementById('canvas');
+    var ctx = c.getContext('2d');
+    draw();
+  }
+
+
   function draw() {
     for (var i = 0; i < 40; i++) {
       var randomPX = Math.floor((Math.random() * 1800) + 1);
@@ -46,10 +53,5 @@ $(document).ready(function() {
     }
   }
 
-  if ($('#data-canvas').length > 0) {
-    var c = document.getElementById('data-canvas');
-    var ctx = c.getContext('2d');
-    draw();
-  }
 
 });

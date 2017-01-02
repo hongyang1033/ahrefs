@@ -29,10 +29,9 @@ gulp.task('sass', function () {
       resType
     ];
     return gulp.src('src/stylesheets/main.scss')
-        .pipe(sass({
-            onError: errNotify.onError(function(error) {
-              return error;
-            })
+        .pipe(sass())
+        .on('error', errNotify.onError(function(error) {
+          return error;
         }))
         .pipe(postcss(processors))
         .pipe(gulp.dest('dist/assests/css'))

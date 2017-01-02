@@ -49,24 +49,13 @@ a.btn-text {
   display: inline-block;
   border-radius: 3px;
   background-color: rgb(255, 78, 34);
-  font-size: 18px;
-  color: inherit;
+  font-size: responsive 14px 18px;
+  font-range: 480px 1280px;
+  color: #ffffff;
   border: 0px;
   padding: 10px 20px;
   cursor: pointer;
   @media (max-width: 480px) {
     font-size: 16px;
   }
-}
-
-
-.Rectangle_2_copy {
-  border-radius: 3px;
-  background-color: rgb(255, 78, 34);
-  position: absolute;
-  left: 525px;
-  top: 369px;
-  width: 229px;
-  height: 45px;
-  z-index: 15;
 }
