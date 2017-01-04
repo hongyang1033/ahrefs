@@ -207,7 +207,6 @@ span.mobile
   z-index: 100
   position: relative
 
-
 .data-details
   max-width: 1090px
   position: relative
@@ -221,24 +220,24 @@ span.mobile
   border-top: 1px solid #1a4981
   &:nth-last-child(1)
     border-bottom: 1px solid #1a4981
+
 //Mobile
 .data-table-mobile
   text-align: left
 
-
 .data-table-mobile span,
-.data-table-mobile-xs span
+.data-table-mobile-sm span
   display: inline-block
   font-size: responsive 52px 128px
   font-range: 480px 1280px
   color: #43BC9C
 
 .data-table-mobile p span,
-.data-table-mobile-xs p span
+.data-table-mobile-sm p span
   color: #43BC9C
 
 .data-table-mobile p, .data-table-mobile p span,
-.data-table-mobile-xs p, .data-table-mobile-xs p span
+.data-table-mobile-sm p, .data-table-mobile-sm p span
   text-align: left
   display: inline-block
   font-size: responsive 18px 44px
@@ -258,17 +257,20 @@ span.mobile
     font-size: 13px !important
     line-height: 28px
 
-.data-table-mobile > .row > .col-md-6.col-xs-6
+.data-table-mobile > .row > .col-md-6
   padding: 0 40px
   &:nth-child(odd)
     border-right: 1px solid #1a4981
 
 .data-table-mobile > .row,
-.data-table-mobile-xs > .container > .row,
+.data-table-mobile-sm > .container > .row,
   border-top: 1px solid #1a4981
   &:nth-last-child(1)
     border-bottom: 1px solid #1a4981
 
+.data-table-mobile-sm > .container > .row > .col-xs-12
+  border-right: 1px solid #1a4981
+  border-left: 1px solid #1a4981
 
 .first__child
   max-width: 38%

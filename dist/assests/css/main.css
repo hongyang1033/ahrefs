@@ -6216,27 +6216,27 @@ span.mobile {
   text-align: left; }
 
 .data-table-mobile span,
-.data-table-mobile-xs span {
+.data-table-mobile-sm span {
   display: inline-block;
   font-size: calc(52px + 76 * ((100vw - 480px) / 800));
   color: #43BC9C; }
 
 @media screen and (min-width: 1280px){
   .data-table-mobile span,
-.data-table-mobile-xs span{
+.data-table-mobile-sm span{
     font-size: 128px; } }
 
 @media screen and (max-width: 480px){
   .data-table-mobile span,
-.data-table-mobile-xs span{
+.data-table-mobile-sm span{
     font-size: 52px; } }
 
 .data-table-mobile p span,
-.data-table-mobile-xs p span {
+.data-table-mobile-sm p span {
   color: #43BC9C; }
 
 .data-table-mobile p, .data-table-mobile p span,
-.data-table-mobile-xs p, .data-table-mobile-xs p span {
+.data-table-mobile-sm p, .data-table-mobile-sm p span {
   text-align: left;
   display: inline-block;
   font-size: calc(18px + 26 * ((100vw - 480px) / 800));
@@ -6245,12 +6245,12 @@ span.mobile {
 
 @media screen and (min-width: 1280px){
   .data-table-mobile p, .data-table-mobile p span,
-.data-table-mobile-xs p, .data-table-mobile-xs p span{
+.data-table-mobile-sm p, .data-table-mobile-sm p span{
     font-size: 44px; } }
 
 @media screen and (max-width: 480px){
   .data-table-mobile p, .data-table-mobile p span,
-.data-table-mobile-xs p, .data-table-mobile-xs p span{
+.data-table-mobile-sm p, .data-table-mobile-sm p span{
     font-size: 18px; } }
 
 .title__top-left {
@@ -6266,17 +6266,21 @@ span.mobile {
       font-size: 13px !important;
       line-height: 28px; } }
 
-.data-table-mobile > .row > .col-md-6.col-xs-6 {
+.data-table-mobile > .row > .col-md-6 {
   padding: 0 40px; }
-  .data-table-mobile > .row > .col-md-6.col-xs-6:nth-child(odd) {
+  .data-table-mobile > .row > .col-md-6:nth-child(odd) {
     border-right: 1px solid #1a4981; }
 
 .data-table-mobile > .row,
-.data-table-mobile-xs > .container > .row {
+.data-table-mobile-sm > .container > .row {
   border-top: 1px solid #1a4981; }
   .data-table-mobile > .row:nth-last-child(1),
-  .data-table-mobile-xs > .container > .row:nth-last-child(1) {
+  .data-table-mobile-sm > .container > .row:nth-last-child(1) {
     border-bottom: 1px solid #1a4981; }
+
+.data-table-mobile-sm > .container > .row > .col-xs-12 {
+  border-right: 1px solid #1a4981;
+  border-left: 1px solid #1a4981; }
 
 .first__child {
   max-width: 38%; }
