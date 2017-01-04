@@ -9,6 +9,7 @@ var browserSync = require('browser-sync').create();
 var autoprefixer = require('autoprefixer');
 var resType = require('postcss-responsive-type');
 
+
 gulp.task('serve', ['sass', 'pug'], function() {
     browserSync.init({
         server: {
@@ -50,5 +51,6 @@ gulp.task('pug', function(){
   .pipe(gulp.dest('dist/'))
   .pipe(browserSync.reload({stream:true}));
 });
+
 
 gulp.task('default', ['serve']);
