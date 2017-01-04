@@ -1,7 +1,4 @@
-body
-  font-family: 'Lato', 'sans-serif'
-  color: white
-
+//Hero
 .hero
   background-image: url(../images/desktop.jpg)
   background-repeat: no-repeat
@@ -26,10 +23,8 @@ body
   font-range: 420px 1280px
   color: 97a5c2
   margin: 20px auto
-  // margin-top: 20px
   width: 100%
   max-width: 440px
-
 
 .hero h1
   font-size: responsive 28px 56px
@@ -43,7 +38,7 @@ body
     padding: 0 10px
 
 .btn-orange
-  margin: 20px auto
+  margin: 20px 0
 
 .mac-wrapper
   text-align: center
@@ -52,6 +47,7 @@ body
 .mac-wrapper img
   margin-bottom: -100px
 
+//Tools
 .tools
   margin-top: 170px
   color: black
@@ -67,12 +63,10 @@ body
   font-size: responsive 22px 48px
   font-range: 480px 1280px
 
-
 .tools-list
   padding: 0
   padding-top: 80px
   border-bottom: 1px solid #ddd
-
 
 .tools-list li
   &:nth-child(1)
@@ -85,17 +79,14 @@ body
   position: relative
   cursor: pointer
 
-
 .tools-list li span:hover:after
   border-bottom: 1px solid #0d3e7e
-
 
 .tools-list li p
   font-size: 16px
   font-weight: 700
   color: #393f4c
   text-decoration: none
-
 
 .tools-list li span,
 span.mobile
@@ -107,18 +98,14 @@ span.mobile
   margin: 0 auto 14px
   border-radius: 15px
 
-
 .tools-list li.span-active
   border-bottom: 1px solid #21426a
-
 
 .tools-list li span:hover
   background: #21426a
 
-
 .tools-list li span.span-active
   background: #21426a
-
 
 .tools-list li span img, span.mobile img
   padding-top: 10px
@@ -169,6 +156,7 @@ span.mobile
   min-height: 650px
   min-width: 700px
 
+//Tools-mobile
 .tools-description-mobile h5
   font-size: responsive 15px 18px
   font-weight: 700
@@ -176,6 +164,7 @@ span.mobile
 .tools-description-mobile p
   font-size: responsive 13px 15px
 
+//Data
 .data
   padding: 80px 0
   background: #0E3F7A
@@ -212,16 +201,11 @@ span.mobile
   position: relative
   z-index: 100
 
-.data-table > .row > .col-lg-6
-  &:nth-child(odd)
-    border-right: 1px solid #1a4981
-
 .data-table > .row
   border-top: 1px solid #1a4981
   &:nth-last-child(1)
     border-bottom: 1px solid #1a4981
 
-//Mobile
 .data-table-mobile
   text-align: left
 
@@ -290,11 +274,11 @@ span.mobile
 .sixth__child
   width: auto
 
+//Testimonial
 .testimonial
   text-align: center
   color: #393f4c
   padding: 40px 0px
-  // margin-top: 20px
 
 .testimonial svg
   @media screen and (max-width: 640px)
@@ -333,6 +317,7 @@ span.mobile
   &:nth-child(1)
     font-weight: 700
 
+//Try-it
 .try-it
   background: #0E3F7A
   padding: 80px 0

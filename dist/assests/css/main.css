@@ -5720,8 +5720,8 @@ a {
  * Basic typography style for copy text
  */
 body {
-  color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: 'Lato', 'sans-serif';
+  color: #fff; }
 
 /**
  * Clear inner floats
@@ -5925,10 +5925,6 @@ svg {
 path {
   fill: #13BF80; }
 
-body {
-  font-family: 'Lato', 'sans-serif';
-  color: white; }
-
 .hero {
   background-image: url(../images/desktop.jpg);
   background-repeat: no-repeat;
@@ -5988,7 +5984,7 @@ body {
       padding: 0 10px; } }
 
 .btn-orange {
-  margin: 20px auto; }
+  margin: 20px 0; }
 
 .mac-wrapper {
   text-align: center;
@@ -6203,9 +6199,6 @@ span.mobile {
   max-width: 1090px;
   position: relative;
   z-index: 100; }
-
-.data-table > .row > .col-lg-6:nth-child(odd) {
-  border-right: 1px solid #1a4981; }
 
 .data-table > .row {
   border-top: 1px solid #1a4981; }
