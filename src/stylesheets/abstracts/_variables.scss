@@ -22,25 +22,38 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 /// @type Color
 $text-color: rgb(34, 34, 34) !default;
 
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+// Brand Color
+$brand-color: #0E3F7A !default;
 
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+// Brand Secondary Color
+$brand-secondary-color: #21426a !default;
 
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
+// Primary Text Color
+$primary-text-color:  #393f4c !default;
 
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+// Secondary Text Color
+$secondary-text-color: #97a5c2 !default;
 
+// Green
+$green: #13bf80 !default;
 
+// Light Green
+$light-green: #43BC9C !default;
 
+// Border Color
+$border-color: #1a4981 !default;
 
+// Dark Orange
+$dark-orange: rgb(255, 78, 34) !default;
+
+// Button Border
+$button-border: #698bba !default;
+
+// White
+$white: #fff !default;
+
+// Light Grey
+$light-grey: #a9bdd7 !default;
 
 /// Container's maximum width
 /// @type Length

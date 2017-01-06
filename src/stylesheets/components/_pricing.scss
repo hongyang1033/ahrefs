@@ -1,7 +1,7 @@
 .pricing-tab {
   display: table;
   list-style: none;
-  border: 1px solid #698bba;
+  border: 1px solid $button-border;
   border-radius: 3px;
   padding-left: 0;
   margin: 0 auto;
@@ -14,11 +14,11 @@
 }
 
 .tab-li + .tab-li {
-  border-left: 1px solid #698bba;
+  border-left: 1px solid $button-border;
 }
 
 .tab-li a {
-  color: #fff;
+  color: $white;
   text-align: center;
   text-decoration: none;
   font-size: responsive 13px 16px;
@@ -28,11 +28,11 @@
 .tab-li:before {
     content: "\25CF"; /* Insert content that looks like bullets */
     padding-right: 8px;
-    color: #fff; /* Or a color you prefer */
+    color: $white; /* Or a color you prefer */
 }
 
 .tab-li a.tab-active:before {
-    color: #fff;
+    color: $white;
 }
 
 .pricing-wrapper {
@@ -41,8 +41,8 @@
 }
 
 .pricing-table {
-  color: #393f4c;
-  background: #ffffff;
+  color: $primary-text-color;
+  background: $white;
   padding: 30px 40px;
   border-radius: 3px;
   text-align: center;
@@ -100,11 +100,11 @@
     position: relative;
     top: -20px;
     text-decoration: line-through;
-    color: rgb(255, 78, 34);
+    color: $dark-orange;
     font-size: responsive 11px 16px;
   }
   &:nth-child(2) {
-    color: #DBDBDB;
+    color: $secondary-text-color;
     font-size: responsive 12px 18px;
   }
 }

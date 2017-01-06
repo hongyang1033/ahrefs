@@ -21,7 +21,7 @@
 .hero p
   font-size: responsive 15px 21px
   font-range: 420px 1280px
-  color: #97a5c2
+  color: $secondary-text-color
   margin: 20px auto
   width: 100%
   max-width: 440px
@@ -50,14 +50,14 @@
   @media screen and (max-width: 768px)
     padding: 80px 0
     margin: 0
-  color: #393f4c
+  color: $primary-text-color
   text-align: center
   @media screen and (max-width: 640px)
     padding: 40px 0
 
 
 .tools-headline h1
-  color: #393f4c
+  color: $primary-text-color
   font-weight: 700
   font-size: responsive 22px 48px
   font-range: 480px 1280px
@@ -87,7 +87,7 @@
 .tools-list li p
   font-size: 16px
   font-weight: 700
-  color: #393f4c
+  color: $primary-text-color
   text-decoration: none
 
 .tools-list li span,
@@ -101,13 +101,13 @@ span.mobile
   border-radius: 15px
 
 .tools-list li.span-active
-  border-bottom: 1px solid #21426a
+  border-bottom: 1px solid $brand-secondary-color
 
 .tools-list li span:hover
-  background: #21426a
+  background: $brand-secondary-color
 
 .tools-list li span.span-active
-  background: #21426a
+  background: $brand-secondary-color
 
 .tools-list li span img, span.mobile img
   padding-top: 10px
@@ -169,7 +169,7 @@ span.mobile
 //Data
 .data
   padding: 80px 0
-  background: #0E3F7A
+  background: $brand-color
   text-align: center
   @media screen and (max-width: 640px)
     padding: 40px 0
@@ -210,16 +210,16 @@ span.mobile
   font-size: 21px !important
   left: 30px
   top: -15px
-  background: #0E3F7A
+  background: $brand-color
   padding: 0 5px
   @media screen and (max-width: 768px)
     font-size: 13px !important
     line-height: 28px
 
 .data-table > .row
-  border-top: 1px solid #1a4981
+  border-top: 1px solid $border-color
   &:nth-last-child(1)
-    border-bottom: 1px solid #1a4981
+    border-bottom: 1px solid $border-color
 
 .data-table-mobile
   text-align: left
@@ -229,11 +229,11 @@ span.mobile
   display: inline-block
   font-size: responsive 52px 128px
   font-range: 480px 1280px
-  color: #43BC9C
+  color: $light-green
 
 .data-table-mobile p span,
 .data-table-mobile-sm p span
-  color: #43BC9C
+  color: $light-green
 
 .data-table-mobile p, .data-table-mobile p span,
 .data-table-mobile-sm p, .data-table-mobile-sm p span
@@ -247,17 +247,17 @@ span.mobile
 .data-table-mobile .row .col-md-6
   padding: 0 40px
   &:nth-child(odd)
-    border-right: 1px solid #1a4981
+    border-right: 1px solid $border-color
 
 .data-table-mobile .row,
 .data-table-mobile-sm .container .row,
-  border-top: 1px solid #1a4981
+  border-top: 1px solid $border-color
   &:nth-last-child(1)
-    border-bottom: 1px solid #1a4981
+    border-bottom: 1px solid $border-color
 
 .data-table-mobile-sm .container .row .col-xs-12
-  border-right: 1px solid #1a4981
-  border-left: 1px solid #1a4981
+  border-right: 1px solid $border-color
+  border-left: 1px solid $border-color
 
 .first__child
   max-width: 38%
@@ -280,7 +280,7 @@ span.mobile
 //Testimonial
 .testimonial
   text-align: center
-  color: #393f4c
+  color: $primary-text-color
   padding: 80px 0
   @media screen and (max-width: 640px)
     padding: 40px 0
@@ -352,7 +352,7 @@ span.mobile
 .pricing-compare
   font-size: responsive 13px 18px
   margin: 20px auto
-  border-bottom: 1px solid #1a4981
+  border-bottom: 1px solid $border-color
 
 //Try-it
 .try-it
@@ -362,7 +362,7 @@ span.mobile
 
 .try-it .container
   text-align: center
-  color: #393f4c
+  color: $primary-text-color
   max-width: 660px
 
 .try-it h1
