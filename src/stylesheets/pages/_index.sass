@@ -21,7 +21,7 @@
 .hero p
   font-size: responsive 15px 21px
   font-range: 420px 1280px
-  color: 97a5c2
+  color: #97a5c2
   margin: 20px auto
   width: 100%
   max-width: 440px
@@ -37,9 +37,6 @@
   @media screen and (max-width: 480px)
     padding: 0 10px
 
-.btn-orange
-  margin: 20px 0
-
 .mac-wrapper
   text-align: center
   margin-top: 20px
@@ -50,22 +47,27 @@
 //Tools
 .tools
   margin-top: 170px
-  color: black
-  text-align: center
   @media screen and (max-width: 768px)
-    margin-top: 140px
-  @media screen and (max-width: 767px)
-    margin-top: 40px
+    padding: 80px 0
+    margin: 0
+  color: #393f4c
+  text-align: center
+  @media screen and (max-width: 640px)
+    padding: 40px 0
+
 
 .tools-headline h1
-  color: 393f4c
+  color: #393f4c
   font-weight: 700
   font-size: responsive 22px 48px
   font-range: 480px 1280px
+  margin-bottom: 20px
 
 .tools-list
   padding: 0
   padding-top: 80px
+  @media screen and (max-width: 992px)
+    padding-top: 40px
   border-bottom: 1px solid #ddd
 
 .tools-list li
@@ -189,9 +191,10 @@ span.mobile
   margin: 0 auto
 
 .data-headline h1
-  padding: 40px
+  padding: 0 40px
+  margin-bottom: 40px
   font-weight: 700
-  font-size: responsive 20px 48px
+  font-size: responsive 22px 48px
   font-range: 480px 1280px
   z-index: 100
   position: relative
@@ -278,7 +281,9 @@ span.mobile
 .testimonial
   text-align: center
   color: #393f4c
-  padding: 40px 0px
+  padding: 80px 0
+  @media screen and (max-width: 640px)
+    padding: 40px 0
 
 .testimonial svg
   @media screen and (max-width: 640px)
@@ -317,22 +322,55 @@ span.mobile
   &:nth-child(1)
     font-weight: 700
 
+//Pricing
+.pricing
+  padding: 80px 0
+  @media screen and (max-width: 640px)
+    padding: 40px 0
+  background: url(../images/pricing-section.jpg)
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  position: relative
+  text-align: center
+  @media screen and (max-width: 960px)
+    background-image: url(../images/pricing-section-tablet.jpg)
+  @media screen and (max-width: 640px)
+    background-image: url(../images/pricing-section-mobile.jpg)
+  @media screen and (max-width: 320px)
+    background-image: url(../images/pricing-section-mobile-xs.jpg)
+
+.pricing-headline h1
+  font-weight: 700
+  font-size: responsive 22px 48px
+  margin-bottom: 20px
+
+.pricing-headline p
+  font-size: responsive 13px 21px
+  color: #a7b2c5
+  margin-bottom: 20px
+
+.pricing-compare
+  font-size: responsive 13px 18px
+  margin: 20px auto
+  border-bottom: 1px solid #1a4981
+
 //Try-it
 .try-it
-  background: #0E3F7A
   padding: 80px 0
+  @media screen and (max-width: 640px)
+    padding: 40px 0
 
 .try-it .container
   text-align: center
-  color: #ffffff
+  color: #393f4c
   max-width: 660px
 
 .try-it h1
-  font-size: responsive 28px 48px
+  font-size: responsive 22px 48px
   font-range: 480px 1280px
   font-weight: 700
   margin-bottom: 20px
 
 .try-it p
-  font-size: responsive 16px 21px
+  font-size: responsive 13px 21px
   font-range: 480px 1280px

@@ -1,0 +1,128 @@
+.pricing-tab {
+  display: table;
+  list-style: none;
+  border: 1px solid #698bba;
+  border-radius: 3px;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.tab-li {
+  display: table-cell;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+
+.tab-li + .tab-li {
+  border-left: 1px solid #698bba;
+}
+
+.tab-li a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: responsive 13px 16px;
+  font-weight: 700
+}
+
+.tab-li:before {
+    content: "\25CF"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #fff; /* Or a color you prefer */
+}
+
+.tab-li a.tab-active:before {
+    color: #fff;
+}
+
+.pricing-wrapper {
+  max-width: 1060px;
+  padding: 40px 20px;
+}
+
+.pricing-table {
+  color: #393f4c;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 3px;
+  text-align: center;
+  max-width: 325px;
+  margin: 0 auto;
+  a {
+    display: block;
+  }
+  @media screen and (max-width: 992px) {
+    margin-bottom: 10px;
+  }
+}
+
+.pricing-table > ul {
+  text-align: left;
+  list-style: none;
+  padding: 0px;
+  li {
+    font-size: responsive 13px 16px;
+  }
+}
+
+.pricing-table-header {
+  text-align: left;
+  h4 {
+    font-size: 30px;
+  }
+}
+
+.pricing-tag {
+  display: inline-block;
+}
+
+.pricing-tag span {
+  &:nth-child(1) {
+    font-size: responsive 16px 24px;
+    position: relative;
+    top: -35px;
+  }
+  &:nth-child(2) {
+    font-size: responsive 48px 70px;
+    font-weight: 700;
+    position: relative;
+    margin-left: 5px;
+  }
+}
+
+.pricing-tag-details {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.pricing-tag-details span {
+  &:nth-child(1) {
+    position: relative;
+    top: -20px;
+    text-decoration: line-through;
+    color: rgb(255, 78, 34);
+    font-size: responsive 11px 16px;
+  }
+  &:nth-child(2) {
+    color: #DBDBDB;
+    font-size: responsive 12px 18px;
+  }
+}
+
+.pricing-descriptions li {
+  &::after {
+    content: url(../images/question-mark.png);
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+  }
+}
+
+.pricing-tools li {
+  &::before {
+    content: url(../images/check.png);
+    margin-right: 10px;
+    position: relative;
+  }
+}
