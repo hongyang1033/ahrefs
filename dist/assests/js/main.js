@@ -41,7 +41,6 @@ $(document).ready(function() {
     draw();
   }
 
-
   function draw() {
     for (var i = 0; i < 40; i++) {
       var randomPX = Math.floor((Math.random() * 1800) + 1);
@@ -51,8 +50,12 @@ $(document).ready(function() {
       ctx.fillStyle = "#0f4c7b";
       ctx.fillRect(randomPX, randomPY, randomSize, randomSize);
     }
+
   }
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
 
 });
 

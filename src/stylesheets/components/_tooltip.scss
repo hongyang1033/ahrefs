@@ -1,0 +1,15 @@
+.tooltip  {
+  .tooltip-inner{
+    min-width: 270px;
+    padding: 10px;
+    text-align: left;
+    line-height: 18px;
+    color: #b2b4b8;
+    border-color: $primary-text-color;
+  }
+}
+
+.tooltip.in {
+  opacity: 1 !important;
+  filter:alpha(opacity=100);
+}

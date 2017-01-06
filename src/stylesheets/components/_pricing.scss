@@ -26,9 +26,9 @@
 }
 
 .tab-li:before {
-    content: "\25CF"; /* Insert content that looks like bullets */
+    content: "\25CF";
     padding-right: 8px;
-    color: $white; /* Or a color you prefer */
+    color: $white;
 }
 
 .tab-li a.tab-active:before {
@@ -106,16 +106,6 @@
   &:nth-child(2) {
     color: $secondary-text-color;
     font-size: responsive 12px 18px;
-  }
-}
-
-.pricing-descriptions li {
-  &::after {
-    content: url(../images/question-mark.png);
-    margin-left: 5px;
-    position: relative;
-    top: 3px;
-    cursor: pointer;
   }
 }
 
