@@ -1,6 +1,9 @@
 .tooltip  {
   .tooltip-inner{
-    min-width: 270px;
+    max-width: 270px;
+    @media screen and (max-width: 640px){
+      max-width: 200px;
+    }
     padding: 10px;
     text-align: left;
     line-height: 18px;

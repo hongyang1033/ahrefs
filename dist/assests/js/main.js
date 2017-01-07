@@ -1,6 +1,7 @@
 $(document).ready(function() {
   var toolList = $('.tools-list').find('li').find('span');
   toolList.eq(0).addClass('span-active');
+  toolList.eq(0).parent().addClass('active-border');
 
   var slider = $('.slider').unslider({autoplay: true, arrows: false, nav: false});
 
@@ -11,7 +12,9 @@ $(document).ready(function() {
   var onChange = slider.on('unslider.change', function(event, index, slide) {
     event.preventDefault();
     toolList.removeClass('span-active');
+    toolList.parent().removeClass('active-border');
     toolList.eq(index).addClass('span-active');
+    toolList.eq(index).parent().addClass('active-border');
   });
 
   toolList.each(function(index) {
@@ -20,7 +23,9 @@ $(document).ready(function() {
       onChange.off();
       clickEvent(index);
       toolList.removeClass('span-active');
+      toolList.parent().removeClass('active-border');
       toolList.eq(index).addClass('span-active');
+      toolList.eq(index).parent().addClass('active-border');
       slider.unslider('stop');
     });
   });
@@ -52,6 +57,12 @@ $(document).ready(function() {
     }
 
   }
+
+  $('.tab-li').click(function(event) {
+    event.preventDefault();
+    $(this).addClass('tab-li-active');
+    $(this).siblings().removeClass('tab-li-active');
+  });
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()

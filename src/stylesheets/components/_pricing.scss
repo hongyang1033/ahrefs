@@ -10,29 +10,31 @@
 .tab-li {
   display: table-cell;
   border-collapse: collapse;
-  padding: 5px 10px;
+  padding: 5px 15px;
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: responsive 13px 16px;
+  font-range: 480px 1280px;
 }
 
 .tab-li + .tab-li {
   border-left: 1px solid $button-border;
 }
 
-.tab-li a {
+.tab-li:hover {
+  background: #456b98;
+  cursor: pointer;
   color: $white;
-  text-align: center;
-  text-decoration: none;
-  font-size: responsive 13px 16px;
-  font-weight: 700
 }
 
-.tab-li:before {
+.tab-li-active {
+  background: #456b98;
+  color: $white;
+  cursor: pointer;
+  &:before {
     content: "\25CF";
-    padding-right: 8px;
-    color: $white;
-}
-
-.tab-li a.tab-active:before {
-    color: $white;
+    margin-right: 5px;
+  }
 }
 
 .pricing-wrapper {
@@ -53,6 +55,7 @@
   }
   @media screen and (max-width: 992px) {
     margin-bottom: 10px;
+    padding: 20px;
   }
 }
 
@@ -68,7 +71,8 @@
 .pricing-table-header {
   text-align: left;
   h4 {
-    font-size: 30px;
+    font-size: responsive 24px 30px;
+    font-range: 480px 1280px;
   }
 }
 
@@ -83,7 +87,7 @@
     top: -35px;
   }
   &:nth-child(2) {
-    font-size: responsive 48px 70px;
+    font-size: responsive 58px 70px;
     font-weight: 700;
     position: relative;
     margin-left: 5px;
@@ -115,4 +119,8 @@
     margin-right: 10px;
     position: relative;
   }
+}
+
+.pricing-compare {
+  cursor: pointer;
 }
